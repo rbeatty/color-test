@@ -1,0 +1,79 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+	<title>Colour Contrast Test</title>
+	<link href="app.css" rel="stylesheet">
+</head>
+<body>
+	<div id="results">
+		<span id="contrastratio">7.64</span>
+		<span id="level">AA</span>
+	</div>
+
+	<form name="colourtest" onsubmit="return false;" action="#">
+		<fieldset id="setfore">
+			<div id="fcolor-result" class="result"><input id="fc" maxlength="7" size="6" type="text"></div>
+			<div class="sliders">
+				<div class="ctrl">
+					<label for="fr-slider">Red:</label>
+					<div class="slider" id="fr-slider"><input class="slider-input" id="fr-slider-input" type="range" max="255" /></div>
+				</div>
+				<div class="ctrl">
+					<label for="fg-slider">Green:</label>
+					<div class="slider" id="fg-slider"><input class="slider-input" id="fg-slider-input" type="range" max="255" /></div>
+				</div>
+				<div class="ctrl">
+					<label for="fb-slider">Blue:</label>
+					<div class="slider" id="fb-slider"><input class="slider-input" id="fb-slider-input" type="range" max="255" /></div>
+				</div>
+				<div class="ctrl">
+					<label for="fh-slider">Hue (&deg;)</label>
+					<div class="slider" id="fh-slider"><input class="slider-input" id="fh-slider-input" type="range" max="360" /></div>
+				</div>
+				<div class="ctrl">
+					<label for="fs-slider">Saturation (%):</label>
+					<div class="slider" id="fs-slider"><input class="slider-input" id="fs-slider-input" type="range" max="100" /></div>
+				</div>
+				<div class="ctrl">
+					<label for="fv-slider">Value (%):</label>
+					<div class="slider" id="fv-slider"><input class="slider-input" id="fv-slider-input" type="range" max="100" /></div>
+				</div>
+			</div>
+		</fieldset>
+
+		<fieldset id="setback">
+			<div id="bcolor-result" class="result"><input id="bc" maxlength="7" size="6" type="text"></div>
+			<div class="sliders">
+				<div class="ctrl">
+					<label for="br-slider">Red:</label>
+					<div class="slider" id="br-slider"><input class="slider-input" id="br-slider-input" type="range" max="255" /></div>
+				</div>
+				<div class="ctrl">
+					<label for="bg-slider">Green:</label>
+					<div class="slider" id="bg-slider"><input class="slider-input" id="bg-slider-input" type="range" max="255" /></div>
+				</div>
+				<div class="ctrl">
+					<label for="bb-slider">Blue:</label>
+					<div class="slider" id="bb-slider"><input class="slider-input" id="bb-slider-input" type="range" max="255" /></div>
+				</div>
+				<div class="ctrl">
+					<label for="bh-slider">Hue (&deg;):</label>
+					<div class="slider" id="bh-slider"><input class="slider-input" id="bh-slider-input" type="range" max="360" /></div>
+				</div>
+				<div class="ctrl">
+					<label for="bs-slider">Saturation (%):</label>
+					<div class="slider" id="bs-slider"><input class="slider-input" id="bs-slider-input" type="range" max="100" /></div>
+				</div>
+				<div class="ctrl">
+					<label for="bv-slider">Value (%):</label>
+					<div class="slider" id="bv-slider"><input class="slider-input" id="bv-slider-input" type="range" max="100" /></div>
+				</div>
+			</div>
+		</fieldset>
+	</form>
+
+	<footer role="contentinfo">Inspiration from <a href="https://colorable.jxnblk.com/" rel="nofollow" target="_blank">jxnblk</a>, modified from <a href="https://snook.ca/technical/colour_contrast/colour.html" rel="nofollow" target="_blank">snook</a>.</footer>
+
+	<script defer src="app.js"></script>
+</body>
+</html>
